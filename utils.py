@@ -67,7 +67,8 @@ interval = "5m"
 end_time = int(datetime.datetime.now().timestamp() * 1000)
 
 print('[+] Loading AI model')
-forecaster = load_model('models\price_forecaster.keras')
+
+forecaster = load_model('./models/price_forecaster.keras')
 
 def generate_window_from_klines(klines):
     global LATENT_NUMBER
