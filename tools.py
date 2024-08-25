@@ -27,7 +27,7 @@ from tensorflow.keras import backend as K
 print('\ttensorflow/load_models')
 from tensorflow.keras.models import load_model  
  
-
+print(tf.__version__)
 symbol = 'ETHUSDT'
 
 
